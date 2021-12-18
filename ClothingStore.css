@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;  
+}
+.aside{
+    width: 330px; 
+    padding: 0.5em;
+}
+.aside h2{
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.4em 0 3.5em 0;   
+}
+.nav_links li{
+    list-style: none;
+    padding: 10px 0px; 
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: #757575;
+    font-weight: 550;
+}
+.nav_links li a.active{
+    color: #000000;
+}
+.dropdown li{
+    font-size: 0.9em;
+    margin: 0.5em 2em;
+}
+.dropdown li a{
+    padding: 0.6em 3em 0.6em 1em;
+    font-weight: 500;
+}
+.dropdown li a.active{
+    background: #F1F1F1;
+}
+.extra{
+    margin: 5em 0.5em;
+}
+.extra ul li{
+    list-style: none;
+}
+.extra ul li a{
+    text-decoration: none;
+}
+.main{
+    padding: 0.8em;
+}
+.main .head{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.7em 0;
+}
+.main .head h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 0;
+    
+}
+.main .head .icons i{
+    font-size: 1.3em;
+    padding-left: 17px;
+   
+}
+.icons i:nth-child(3){
+    display: none;
+}
+.main .featured img{
+    filter: brightness(1.1);
+}
+.featured .feature-img{
+    position: relative;
+    text-align: center;
+    color: white;
+
+    
+}
+.featured .feature-img .feature-title{
+    position: absolute;
+    top: 18%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+
+
+
+    
+

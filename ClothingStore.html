@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="ClothingStore.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="aside">
+            <h2>LOGO</h2>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#" class="active">Jeans<i class="fas fa-sort-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="active"><i class="fas fa-caret-right"></i> Skinny</a></li>
+                            <li><a href="#">Relaxed</a></li>
+                            <li><a href="#">Bootcut</a></li>
+                            <li><a href="#">Straight</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#">Jacket</a></li>
+                    <li class="nav_item"><a href="#">Gymwear</a></li>
+                    <li class="nav_item"><a href="#">Blazers</a></li>
+                    <li class="nav_item"><a href="#">Shoes</a></li>
+
+                </ul>
+            </nav>
+            <div class="extra">
+                <ul>
+                    <li><a href="#information">Contact</a></li>
+                    <li><a href="#pop_up">Newsletter</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>  
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="head">
+                <h2>Jeans</h2>
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="feature-img">
+                    <img src="jeans.jpg" alt="">
+                    <div class="feature-title">
+                        <h3>New arrivals</h3>
+                        <h4>COLLECTION 2016</h4>
+                        <a href="#product">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-page" id="product">
+                <div class="product-count"><p>8 items</p></div>
+                <div class="product">
+                    <ul>
+                        <li>
+                            <img src="jeans1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="jeans1.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subcribe" id="subscribe">
+                <div class="subcribe-title">
+                    <h3>Subscribe</h3>
+                </div>
+                <div class="subscribe-body">
+                    <label for="email">To get special offers and VIP treatment:</label>
+                    <input type="email" id="email" placeholder="Enter e-mail">
+                    <a href="#">Subcribe</a>
+                </div>
+            </div>
+
+            <div class="info" id="information">
+                <div class="contact">
+                    <div class="title">
+                        <h4>Contact</h4>
+                        <p>Questions? Go ahead.</p>
+                    </div>
+                    <div class="contact-body">
+                        <ul>
+                            <li> <input type="text" placeholder="Name"></li>
+                            <li><input type="text" placeholder="Email"></li>
+                            <li><input type="text" placeholder="Subject"></li>
+                            <li<input type="text" placeholder="Message"></li>
+                        </ul>                           
+                        <a href="#">Send</a>
+                    </div>
+                </div>
+    
+                <div class="about">
+                    <div class="title">
+                        <h4>About</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">We're hiring</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Shipment</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Gift card</a></li>
+                        <li><a href="#">Return</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+    
+                <div class="store">
+                    <div class="title">
+                        <h4>Store</h4>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Company Name</a></li>
+                        <li><a href="#"><i class="fas fa-phone-alt"></i> 0044123123</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> ex@mail.com</a></li>
+                    </ul>
+                    <div class="title">
+                        <h4>We accept</h4>
+                    </div>
+                    <ul>
+                        <li> <a href="#"><i class="fab fa-cc-amex"></i> Amex</a></li>
+                        <li><a href="#"><i class="far fa-credit-card"></i> Credit Card</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer">
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+
+        </div>
+
+       
+
+      
+
+    </div>
+
+    
+</body>
+</html>
