@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
 }
 img{
     width: 100%;
+}
+body{
+    font-size: 1.125em;
 }
 .container{
     display: flex;
@@ -14,34 +18,37 @@ img{
     max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;  
+    border: 1px solid black;
 }
 .aside{
-    width: 330px; 
+    width: 20%; 
     padding: 0.5em;
+    border: 1px solid brown;
 }
 .aside h2{
     font-weight: 500;
     letter-spacing: 4px;
-    font-size: 1.4em;
+    font-size: 1.5rem; 
+    margin: 1.4em 0 4em 0;   
     font-family: 'Montserrat', sans-serif;
-    margin: 1.4em 0 3.5em 0;   
 }
-.nav_links li{
+.navigation li{
     list-style: none;
-    padding: 10px 0px; 
-    font-size: 1.2em;
+    padding: 0.5rem 0; 
+    font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
 }
-.nav_links li a{
+.navigation li a{
     text-decoration: none;
     color: #757575;
     font-weight: 550;
 }
-.nav_links li a.active{
+.navigation li a.active{
     color: #000000;
+    
 }
 .dropdown li{
-    font-size: 0.9em;
+    font-size: 1rem;
     margin: 0.5em 2em;
 }
 .dropdown li a{
@@ -50,60 +57,35 @@ img{
 }
 .dropdown li a.active{
     background: #F1F1F1;
+    
 }
 .extra{
     margin: 5em 0.5em;
 }
 .extra ul li{
     list-style: none;
+    padding: 0.5em 0;
+    
 }
 .extra ul li a{
     text-decoration: none;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 .main{
-    padding: 0.8em;
+    width: 80%;
+    border: 1px solid green;
+    padding: 2%;
 }
-.main .head{
+.header{
     display: flex;
     justify-content: space-between;
-    margin: 1.7em 0;
+    padding: 1em 0;
 }
-.main .head h2{
+.header .title{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    padding: 0;
-    
+    font-weight: 500;
+    font-size: 1.5rem;
 }
-.main .head .icons i{
-    font-size: 1.3em;
-    padding-left: 17px;
-   
-}
-.icons i:nth-child(3){
-    display: none;
-}
-.main .featured img{
-    filter: brightness(1.1);
-}
-.featured .feature-img{
-    position: relative;
-    text-align: center;
-    color: white;
-
-    
-}
-.featured .feature-img .feature-title{
-    position: absolute;
-    top: 18%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-
-    
-}
-
-
-
-
-    
-
