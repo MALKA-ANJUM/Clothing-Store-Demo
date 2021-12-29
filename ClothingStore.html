@@ -19,9 +19,9 @@
                 <ul class="navigation">
                     <li><a href="#">Shirts</a></li>
                     <li><a href="#">Dresses</a></li>
-                    <li><a href="#" class="active">Jeans<i class="fas fa-sort-down"></i></a>
+                    <li><a href="#" class="open">Jeans<i class="fas fa-sort-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="#" class="active"><i class="fas fa-caret-right"></i> &nbsp; &nbsp; Skinny</a></li>
+                            <li><a href="#" class="open"><i class="fas fa-caret-right"></i> &nbsp; &nbsp; Skinny</a></li>
                             <li><a href="#">Relaxed</a></li>
                             <li><a href="#">Bootcut</a></li>
                             <li><a href="#">Straight</a></li>
@@ -46,8 +46,35 @@
             <div class="top">
                 <div class="mainhead">
                     <h3>LOGO</h3>
-                    <i class="fa fa-bars"></i>                      
+                    <i class="fa fa-bars menuToggle"></i>                      
                 </div>
+                <nav>
+                    <ul class="nav">
+                        <h3>LOGO</h3>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#" class="open">Jeans<i class="fas fa-sort-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#" class="open"><i class="fas fa-caret-right"></i> &nbsp; &nbsp; Skinny</a></li>
+                                <li><a href="#">Relaxed</a></li>
+                                <li><a href="#">Bootcut</a></li>
+                                <li><a href="#">Straight</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a href="#">Jacket</a></li>
+                        <li class="nav_item"><a href="#">Gymwear</a></li>
+                        <li class="nav_item"><a href="#">Blazers</a></li>
+                        <li class="nav_item"><a href="#">Shoes</a></li>
+    
+                        <ul class="extra">
+                            <li><a href="#information">Contact</a></li>
+                            <li><a href="#pop_up">Newsletter</a></li>
+                            <li><a href="#subscribe">Subscribe</a></li>
+                        </ul>  
+                    </ul>
+                        
+                </nav>
+               
             </div>
             <div class="header">
                 <div class="title">
@@ -162,7 +189,7 @@
                 </div>  
         <!-- product end-->
         <!-- subscribe -->
-                <div class="subscribe">
+                <div class="subscribe" id="subscribe">
                     <div class="subscribe-title">
                         <h2>Subscribe</h2>
                     </div>
@@ -174,7 +201,7 @@
                 </div>
         <!------contact----------- -->
         <div class="sum-up">
-            <div class="contact">
+            <div class="contact" id="information">
                 <div class="title">
                     <h3>contact</h3>
                     <p>Questions? Go ahead.</p>
@@ -240,5 +267,17 @@
     <!-- main ends-->
     </div>
     <!-- container ends -->
+
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle')
+        let body = document.querySelector('.body')
+        let nav = document.querySelector('.nav')
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>

@@ -43,7 +43,7 @@ body{
     color: #757575;
     font-weight: 550;
 }
-.navigation li a.active{
+.navigation li a.open{
     color: #000000;
     
 }
@@ -55,7 +55,7 @@ body{
     padding: 0.6em 3em 0.6em 1em;
     font-weight: 500;
 }
-.dropdown li a.active{
+.dropdown li a.open{
     background: #F1F1F1;
     
 }
@@ -74,7 +74,59 @@ body{
     font-size: 0.85rem;
     font-weight: 500;
 }
-
+.nav{
+    background: #fff;
+    color: #000;
+}
+.nav h3{
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 1.8rem; 
+    margin: 1.2em;   
+    font-family: 'Montserrat', sans-serif;
+}
+.nav li{
+    list-style: none;
+    padding: 0.5rem; 
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.nav li a{
+    text-decoration: none;
+    color: #757575;
+    font-weight: 550;
+}
+.nav li a.open{
+    color: #000000;
+    
+}
+.nav .dropdown li{
+    font-size: 1rem;
+    margin: 0.5em 2em;
+}
+.nav .dropdown li a{
+    padding: 0.6em 3em 0.6em 1em;
+    font-weight: 500;
+}
+.nav .dropdown li a.open{
+    background: #F1F1F1;
+    
+}
+.nav .extra{
+    margin: 5em 0.5em;
+}
+.nav .extra li{
+    list-style: none;
+    padding: 0.5em 0;
+    
+}
+.nav .extra li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
 /* *************main************ */
 .main{
     width: 77%;
@@ -83,9 +135,14 @@ body{
    
 }
 .top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+    transition: 1s;  
     display: none;
-    
-    
 }
 .mainhead{
     display: flex;
@@ -342,6 +399,20 @@ body{
     .card{
         width: 48%;
         
+        
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 28%;
+        height: 100vh;
+        z-index: 4;
+        transition: 0.5s; 
+       
+    }
+    .nav.active{
+        left: 0%;
         
     }
 }
